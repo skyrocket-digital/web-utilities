@@ -13,16 +13,16 @@ class CopyrightYear {
 }
 
 const initializeCopyrightYear = () => {
-    window.skyscripts = window.skyscripts || [];
-    const triggers = document.querySelectorAll('[sr-copyright="container"]');
-    triggers.forEach(trigger => {
-        let instance = new CopyrightYear(trigger);
-        window.skyscripts.push({'CopyrightYear': instance});
-    });
-}
+  window.skyscripts = window.skyscripts || [];
+  const triggers = document.querySelectorAll('[sr-copyright="container"]');
+  triggers.forEach((trigger) => {
+    let instance = new CopyrightYear(trigger);
+    window.skyscripts.push({ CopyrightYear: instance });
+  });
+};
 
 if (/complete|interactive|loaded/.test(document.readyState)) {
-    initializeCopyrightYear();
+  initializeCopyrightYear();
 } else {
-    window.addEventListener('DOMContentLoaded', initializeCopyrightYear);
+  window.addEventListener('DOMContentLoaded', initializeCopyrightYear);
 }
