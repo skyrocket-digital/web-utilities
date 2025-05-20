@@ -7,8 +7,7 @@ class CopyrightYear {
   init() {
     if (!this.yearContainer) return;
     const today = new Date();
-    let year = d.getFullYear();
-    
+    let year = today.getFullYear();
     this.yearContainer.innerHTML = year;
   }
 }
