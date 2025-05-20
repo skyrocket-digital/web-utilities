@@ -1,6 +1,7 @@
 class CopyrightYear {
   construction(_yearContainer) {
     this.yearContainer = _yearContainer;
+    this.init();
   }
 
   init() {
