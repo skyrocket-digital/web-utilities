@@ -12,7 +12,7 @@ class CopyrightYear {
   }
 }
 
-const initializeCopyrightYear = () => 
+const initializeCopyrightYear = () => {
     window.skyscripts = window.skyscripts || [];
     const triggers = document.querySelectorAll('[sr-copyright="container"]');
     triggers.forEach(trigger => {
