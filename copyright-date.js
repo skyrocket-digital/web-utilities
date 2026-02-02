@@ -1,5 +1,5 @@
 class CopyrightYear {
-  construction(_yearContainer) {
+  constructor(_yearContainer) {
     this.yearContainer = _yearContainer;
     this.init();
   }
@@ -21,7 +21,7 @@ const initializeCopyrightYear = () => {
   });
 };
 
-if (/complete|interactive|loaded/.test(document.readyState)) {
+if (/complete|interactive/.test(document.readyState)) {
   initializeCopyrightYear();
 } else {
   window.addEventListener('DOMContentLoaded', initializeCopyrightYear);
